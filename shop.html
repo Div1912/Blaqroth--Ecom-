@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - BLAQROTH Premium Clothing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">BLAQROTH</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/shop.html" class="active">Shop</a>
+        <a href="/collections.html">Collections</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-outline">Sign In</button>
+        <button class="btn btn-primary cart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Cart (0)
+        </button>
+      </div>
+      <button class="mobile-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="shop-main">
+    <div class="shop-container">
+      <aside class="filters fade-in">
+        <h2>Filters</h2>
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <label><input type="checkbox" value="mens"> Men's</label>
+          <label><input type="checkbox" value="womens"> Women's</label>
+          <label><input type="checkbox" value="accessories"> Accessories</label>
+        </div>
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div class="price-range">
+            <input type="range" min="0" max="1000" value="500" id="priceRange">
+            <span>$<span id="priceValue">500</span></span>
+          </div>
+        </div>
+        <button class="btn btn-primary">Apply Filters</button>
+      </aside>
+
+      <section class="products">
+        <div class="products-header">
+          <h1>All Products</h1>
+          <select id="sort" class="sort-select">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+
+        <div class="products-grid">
+          <!-- Products will be dynamically added here -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>BLAQROTH</h3>
+        <p>Premium clothing for the modern individual.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="/">Home</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: info@blaqroth.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BLAQROTH. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="animations.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
